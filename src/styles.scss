@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/app.component.scss';
+
+@font-face {
+	font-family: 'Conv_Brandon_bld';
+	src: url('../src/assets/fonts/Brandon_bld.eot');
+	src: url('../src/assets/fonts/Brandon_bld.woff') format('woff'), url('../src/assets/fonts/Brandon_bld.ttf') format('truetype'), url('../src/assets/fonts/Brandon_bld.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family:"Conv_Brandon_reg", "arial", sans-serif;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 15px;
+  background: #feffff url(../src/assets/images/bg.jpg) repeat;
+  margin: 0;
+  padding: 0;
+}
