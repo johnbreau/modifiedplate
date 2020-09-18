@@ -1,0 +1,23 @@
+[
+  {
+      "id": 1,
+      "title": "Roller Coaster",
+      "imagePath": "../assets/images/img_25_1.jpg",
+      "imageAlt": "This is an image",
+      "ctaLink": "https://www.google.com"
+  },
+  {
+      "id": 2,
+      "title": "Roller Coaster 2",
+      "imagePath": "../assets/images/img_25_1.jpg",
+      "imageAlt": "This is an image",
+      "ctaLink": "https://www.google.com"
+  },
+  {
+      "id": 3,
+      "title": "Roller Coaster 3",
+      "imagePath": "../assets/images/img_25_1.jpg",
+      "imageAlt": "This is an image",
+      "ctaLink": "https://www.google.com"
+  }
+]
