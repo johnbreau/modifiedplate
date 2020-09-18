@@ -1,23 +1,50 @@
+@import '../app.component.scss';
+
 .header {
   margin-top: 20px;
   width: 100%;
   min-height: 80px;
-  background-color: #3a64ac;
+  background-color: $brandBlue;
 }
 
 .header__button-container {
+  height: 80px;
   margin: 0 auto;
-  width: 60%;
+  width: 700px;
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
   list-style-type: none;
-  color: #fff;
+  color: $primaryWhite;
   justify-content: space-between;
 }
 
-li {
+.header__text-link {
   text-decoration: none;
-  color: #fff;
-  font-weight: 700;
+  text-transform: uppercase;
+  color: $primaryWhite;
+  font-weight: 400;
+  padding-top: 30px;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.header__caret {
+  height: auto;
+  margin-left: 8px;
+  width: 13px;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.header__logo-image {
+  margin-top: 8px;
+  margin-left: -30px;
+  border: 2px solid $primaryWhite;
+  border-radius: 2px;
+  height: 60px;
+  width: auto;
 }

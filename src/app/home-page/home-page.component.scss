@@ -1,0 +1,69 @@
+@import '../app.component.scss';
+
+.homePage__container {
+  background-color: rgba($primaryWhite, 0.80);
+  border-radius: 5px;
+  margin: 40px auto;
+  min-height: 400px;
+  padding: 30px;
+  max-width: 1000px;
+}
+
+.threeColumnCards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  // @include mq(desktop-tablet) {
+  //   flex-direction: row;
+  // }
+}
+
+.threeColumnCards__card {
+  height: 350px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 3px;
+  margin-top: 0;
+  width: 320px;
+  background-color: $primaryWhite;
+
+  // @include mq(desktop-tablet) {
+  //   margin-left: 0;
+  // }
+}
+
+.threeColumnCards__card:not(:last-child) {
+  margin-right:15px;
+  // @include mq(desktop-tablet) {
+  //   margin-right: 43px;
+  // }
+}
+
+.threeColumnCards__cardHeader {
+  color: $primaryWhite;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 14px;
+}
+
+.threeColumnCards__cardBorder {
+  border: 1px solid $brandBlue;
+  border-radius: 5px;
+}
+
+.threeColumnCards__cardBackground {
+  background-color: $brandBlue;
+}
+
+.threeColumnCards__cardBody {
+  max-height: 60%;
+  min-height: 60%;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.threeColumnCards__cardCta {
+  padding: 11px 22px;
+}

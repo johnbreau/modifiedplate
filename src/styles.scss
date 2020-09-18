@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/app.component.scss';
 
+$primaryWhite: #fff;
+$grey: #afafaf;
+
 @font-face {
 	font-family: 'Conv_Brandon_bld';
 	src: url('../src/assets/fonts/Brandon_bld.eot');
