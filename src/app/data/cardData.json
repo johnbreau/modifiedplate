@@ -8,15 +8,22 @@
   },
   {
       "id": 2,
-      "title": "Roller Coaster 2",
-      "imagePath": "../assets/images/img_25_1.jpg",
+      "title": "Happy Turkey Day",
+      "imagePath": "../assets/images/img_22_1.jpg",
       "imageAlt": "This is an image",
       "ctaLink": "https://www.google.com"
   },
   {
       "id": 3,
       "title": "Roller Coaster 3",
-      "imagePath": "../assets/images/img_25_1.jpg",
+      "imagePath": "../assets/images/img_23_1.jpg",
+      "imageAlt": "This is an image",
+      "ctaLink": "https://www.google.com"
+  },
+   {
+      "id": 34,
+      "title": "The Golden Age of Country",
+      "imagePath": "../assets/images/img_27_1.jpg",
       "imageAlt": "This is an image",
       "ctaLink": "https://www.google.com"
   }

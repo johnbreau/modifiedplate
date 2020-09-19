@@ -1,15 +1,18 @@
-<div class="homePage__container">
-  <div class="threeColumnCards__container">  
-
-      <div *ngFor="let data of cardData.default" class="threeColumnCards__card threeColumnCards__cardBorder" [ngStyle]="{'background-image': 'url(../assets/images/img_25_1.jpg)', 'background-size': 'cover'}">
-        <div class="threeColumnCards__cardHeader threeColumnCards__cardBackground">
+<div class="homePage">
+  <h1 class="homePage__title">
+    <span class="homePage__title--mainHeading">The Modified Plate: </span>
+    <span class="homePage__title--subHeading">Media & Musings about the LEGO<sup>®</sup> brand</span>
+    </h1>
+  <div class="homePage__container">  
+      <div *ngFor="let data of cardData.default" class="homePage__card homePage__cardBorder" [ngStyle]="{'background-image': 'url(' + data.imagePath + ')', 'background-size': 'cover'}">
+        <h2 class="homePage__cardHeader homePage__cardBackground">
           {{data.title}}
+        </h2>
+        <div class="homePage__cardBody">
         </div>
-        <div class="threeColumnCards__cardBody">
-        </div>
-        <div class="threeColumnCards__cardCta">
+        <div class="homePage__cardCta">
+          <app-cta [ctaText]="ctaText"></app-cta>
         </div>
       </div>
-
   </div>
 </div>

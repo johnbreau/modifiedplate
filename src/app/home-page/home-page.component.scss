@@ -1,6 +1,6 @@
 @import '../app.component.scss';
 
-.homePage__container {
+.homePage {
   background-color: rgba($primaryWhite, 0.80);
   border-radius: 5px;
   margin: 40px auto;
@@ -9,24 +9,56 @@
   max-width: 1000px;
 }
 
-.threeColumnCards__container {
+.homePage__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   // @include mq(desktop-tablet) {
   //   flex-direction: row;
   // }
 }
 
-.threeColumnCards__card {
+.homePage__title {
+  margin: 0;
+  height: 60px;
+  color: $brandRed;
+  text-transform: uppercase;
+}
+
+.homePage__title--mainHeading {
+  float: left;
+  position: relative;
+  font-family: 'brandon-bold', sans-serif;
+  font-size: 34px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.homePage__title--subHeading {
+  color: $brandBlue;
+  font-family: 'brandon-thin', sans-serif;
+  font-size: 30px;
+  padding-top: 5px;
+  text-align: left;
+  text-transform: uppercase;
+
+  sup {
+    font-size: 10px;
+  }
+}
+
+.homePage__card {
+  font-family: 'brandon-bold', sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 0.1;
   height: 350px;
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: 3px;
   margin-top: 0;
-  width: 320px;
+  width: 316px;
   background-color: $primaryWhite;
 
   // @include mq(desktop-tablet) {
@@ -34,37 +66,34 @@
   // }
 }
 
-.threeColumnCards__card:not(:last-child) {
-  margin-right:15px;
-  // @include mq(desktop-tablet) {
-  //   margin-right: 43px;
-  // }
-}
-
-.threeColumnCards__cardHeader {
+.homePage__cardHeader {
+  margin: 0;
   color: $primaryWhite;
-  font-size: 1.3em;
+  font-size: 15px;
   font-weight: 700;
-  padding: 14px;
+  letter-spacing: 1px;
+  padding: 15px;
   text-align: left;
+  text-transform: uppercase;
 }
 
-.threeColumnCards__cardBorder {
+.homePage__cardBorder {
   border: 1px solid $brandBlue;
   border-radius: 5px;
 }
 
-.threeColumnCards__cardBackground {
+.homePage__cardBackground {
   background-color: $brandBlue;
 }
 
-.threeColumnCards__cardBody {
+.homePage__cardBody {
   max-height: 60%;
   min-height: 60%;
   overflow: hidden;
   padding: 15px;
 }
 
-.threeColumnCards__cardCta {
-  padding: 11px 22px;
+.homePage__cardCta {
+  margin-top: -20px;
+  margin-left: 15px;
 }

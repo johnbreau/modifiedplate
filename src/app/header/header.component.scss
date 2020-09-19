@@ -1,7 +1,8 @@
 @import '../app.component.scss';
 
 .header {
-  margin-top: 20px;
+  border-top: 6px solid $brandRed;
+  margin-top: 30px;
   width: 100%;
   min-height: 80px;
   background-color: $brandBlue;
@@ -19,30 +20,34 @@
 }
 
 .header__text-link {
+  font-family: 'brandon-bold', sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
   color: $primaryWhite;
   font-weight: 400;
-  padding-top: 30px;
+  padding-top: 27px;
 
   &:hover {
     color: $grey;
   }
+
+  svg {
+    height: 13px;
+    margin: 6px 10px;
+    fill: $primaryWhite;
+  }
 }
 
-.header__caret {
-  height: auto;
-  margin-left: 8px;
-  width: 13px;
-
-  &:hover {
-    transform: rotate(180deg);
-  }
+.header__text-link:hover svg {
+  fill: $grey;
 }
 
 .header__logo-image {
   margin-top: 8px;
-  margin-left: -30px;
+  margin-left: -70px;
   border: 2px solid $primaryWhite;
   border-radius: 2px;
   height: 60px;
