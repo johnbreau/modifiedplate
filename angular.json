@@ -28,7 +28,8 @@
               "src/assets",
               "src/assets/svg",
               "src/assets/fonts",
-              "src/assets/stickers"
+              "src/assets/stickers",
+              "src/assets/styles"
             ],
             "styles": [
               "src/styles.scss"
