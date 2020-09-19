@@ -11,6 +11,7 @@ import { CtaComponent } from './shared/cta/cta.component';
 import { StickerGalleryComponent } from './sticker-gallery/sticker-gallery.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { StickerService } from './services/sticker.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ContactComponent } from './contact/contact.component';
       {path: 'stickers', component: StickerGalleryComponent},
     ]),
   ],
-  providers: [],
+  providers: [StickerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
