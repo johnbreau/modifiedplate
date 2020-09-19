@@ -37,6 +37,7 @@
 }
 
 .homePage__title--subHeading {
+  display: inline-block;
   color: $brandBlue;
   font-family: 'brandon-thin', sans-serif;
   font-size: 30px;
@@ -46,6 +47,10 @@
 
   sup {
     font-size: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
   }
 }
 
