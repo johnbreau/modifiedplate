@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CtaComponent } from './shared/cta/cta.component';
 import { StickerGalleryComponent } from './sticker-gallery/sticker-gallery.component';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { StickerGalleryComponent } from './sticker-gallery/sticker-gallery.compo
     HeaderComponent,
     HomePageComponent,
     CtaComponent,
-    StickerGalleryComponent
+    StickerGalleryComponent,
+    NewsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
