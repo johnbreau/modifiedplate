@@ -10,11 +10,11 @@ import * as data from '../data/cardData.json';
 export class HomePageComponent implements OnInit {
   public cardData: any = data;
   public ctaText = 'See More';
+  public name: string;
 
   constructor(
   ) { }
 
-  ngOnInit(){
-   console.log('test', this.cardData);
+  ngOnInit() {
   }
 }
