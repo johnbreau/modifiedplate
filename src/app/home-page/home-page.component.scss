@@ -1,4 +1,10 @@
 @import '../app.component.scss';
+@import '../../assets/styles/include-media.scss';
+
+$breakpoints: (
+  phone: 320px, 
+  tablet: 768px, 
+  desktop: 1024px) !default;
 
 .homePage {
   background-color: rgba($primaryWhite, 0.80);
@@ -47,6 +53,10 @@
 
   sup {
     font-size: 10px;
+  }
+
+  @include media("<desktop") {
+    display: none;
   }
 }
 
