@@ -7,7 +7,7 @@ styleUrls: ['./sticker-gallery.component.scss'],
 encapsulation: ViewEncapsulation.None
 })
 export class StickerGalleryComponent implements OnInit {
-images = [];
+stickers = [];
 slideIndex = 0;
 constructor(private stickerService: StickerService) {}
 ngOnInit(): void {
@@ -15,7 +15,7 @@ ngOnInit(): void {
 }
 loadImages(): void {
   this.stickerService.fetchImages()
-  .subscribe(images => this.images = images);
+  .subscribe(stickers => this.stickers = stickers);
 }
 openModal() {
   document.getElementById('imgModal').style.display = 'block';
