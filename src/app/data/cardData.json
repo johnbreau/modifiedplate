@@ -2,78 +2,71 @@
     {
         "id": 11,
         "title": "Yellow Brick Road",
-        "imagePath": "../assets/images/emerald-city.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/emerald-city.jpg"
     },
     {
         "id": 10,
         "title": "The Cantina Janitor",
-        "imagePath": "../assets/images/img_37_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_37_1.jpg"
     },
   {
       "id": 1,
       "title": "Roller Coaster",
-      "imagePath": "../assets/images/img_25_1.jpg",
-      "imageAlt": "This is an image",
-      "ctaLink": "https://www.google.com"
+      "imagePath": "../assets/images/img_25_1.jpg"
   },
   {
-        "id": 6,
-        "title": "The Wrestler",
-        "imagePath": "../assets/images/img_31_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "id": 12,
+        "title": "The Plant",
+        "imagePath": "../assets/images/img_41_1.jpg"
+    },
+  {
+        "id": 13,
+        "title": "The Imposter",
+        "imagePath": "../assets/images/img_42_1.jpg"
     },
    {
       "id": 4,
       "title": "The Golden Age of Country",
-      "imagePath": "../assets/images/img_27_1.jpg",
-      "imageAlt": "This is an image",
-      "ctaLink": "https://www.google.com"
+      "imagePath": "../assets/images/img_27_1.jpg"
   },
+  {
+        "id": 14,
+        "title": "President's Day",
+        "imagePath": "../assets/images/img_30_1.jpg"
+    },
+  {
+        "id": 6,
+        "title": "The Wrestler",
+        "imagePath": "../assets/images/img_31_1.jpg"
+    },
   {
         "id": 5,
         "title": "The Olympics",
-        "imagePath": "../assets/images/img_29_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_29_1.jpg"
     },
     {
         "id": 7,
         "title": "Tragedy at the Drive-In",
-        "imagePath": "../assets/images/img_33_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_33_1.jpg"
     },
     {
         "id": 8,
         "title": "Duane's Last Prank",
-        "imagePath": "../assets/images/img_34_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_34_1.jpg"
     },
     {
         "id": 2,
         "title": "Happy Turkey Day",
-        "imagePath": "../assets/images/img_22_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_22_1.jpg"
     },
     {
         "id": 9,
         "title": "Before the Show",
-        "imagePath": "../assets/images/img_26_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_26_1.jpg"
     },
     {
         "id": 3,
         "title": "Here Comes Winter",
-        "imagePath": "../assets/images/img_23_1.jpg",
-        "imageAlt": "This is an image",
-        "ctaLink": "https://www.google.com"
+        "imagePath": "../assets/images/img_23_1.jpg"
     }
 ]
