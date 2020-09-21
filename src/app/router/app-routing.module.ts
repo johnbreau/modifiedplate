@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'news' , component: NewsComponent},
   {path: 'contact' , component: ContactComponent},
   {path: 'full-image/:id/imagePath/:imagePath/title/:title' , component: FullImageComponent},
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
