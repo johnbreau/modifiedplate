@@ -12,6 +12,7 @@ import { StickerGalleryComponent } from './sticker-gallery/sticker-gallery.compo
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { StickerService } from './services/sticker.service';
+import { FullImageComponent } from './full-image/full-image.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { StickerService } from './services/sticker.service';
     CtaComponent,
     StickerGalleryComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    FullImageComponent
   ],
   imports: [
     BrowserModule,

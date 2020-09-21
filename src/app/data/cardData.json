@@ -1,4 +1,18 @@
 [
+    {
+        "id": 11,
+        "title": "Yellow Brick Road",
+        "imagePath": "../assets/images/emerald-city.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 10,
+        "title": "The Cantina Janitor",
+        "imagePath": "../assets/images/img_37_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
   {
       "id": 1,
       "title": "Roller Coaster",
@@ -7,19 +21,12 @@
       "ctaLink": "https://www.google.com"
   },
   {
-      "id": 2,
-      "title": "Happy Turkey Day",
-      "imagePath": "../assets/images/img_22_1.jpg",
-      "imageAlt": "This is an image",
-      "ctaLink": "https://www.google.com"
-  },
-  {
-      "id": 3,
-      "title": "Roller Coaster 3",
-      "imagePath": "../assets/images/img_23_1.jpg",
-      "imageAlt": "This is an image",
-      "ctaLink": "https://www.google.com"
-  },
+        "id": 6,
+        "title": "The Wrestler",
+        "imagePath": "../assets/images/img_31_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
    {
       "id": 4,
       "title": "The Golden Age of Country",
@@ -28,10 +35,45 @@
       "ctaLink": "https://www.google.com"
   },
   {
-    "id": 5,
-    "title": "The Olympics",
-    "imagePath": "../assets/images/img_29_1.jpg",
-    "imageAlt": "This is an image",
-    "ctaLink": "https://www.google.com"
-}
+        "id": 5,
+        "title": "The Olympics",
+        "imagePath": "../assets/images/img_29_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 7,
+        "title": "Tragedy at the Drive-In",
+        "imagePath": "../assets/images/img_33_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 8,
+        "title": "Duane's Last Prank",
+        "imagePath": "../assets/images/img_34_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 2,
+        "title": "Happy Turkey Day",
+        "imagePath": "../assets/images/img_22_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 9,
+        "title": "Before the Show",
+        "imagePath": "../assets/images/img_26_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    },
+    {
+        "id": 3,
+        "title": "Here Comes Winter",
+        "imagePath": "../assets/images/img_23_1.jpg",
+        "imageAlt": "This is an image",
+        "ctaLink": "https://www.google.com"
+    }
 ]

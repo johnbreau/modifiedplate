@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NewsService } from '../services/news.service';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-news',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.scss']
 })
 export class NewsComponent implements OnInit {
+  public newsApiData: any;
 
-  constructor() { }
+  constructor(
+    public newsService: NewsService,
+    public http: HttpClient
+  ) { }
 
   ngOnInit() {
+    this.http.get<any>('https://newsapi.org/v2/everything?q=lego&apiKey=b83de8ac4f38459589d1e694aa9e19dd').subscribe(data => {
+      this.newsApiData = data.articles;
+      console.log(data.articles);
+    });
   }
 
 }

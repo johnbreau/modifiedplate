@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from '../data/cardData.json';
+import { Router } from '@angular/router';
 // import { CtaComponent } from '../shared/cta/cta.component';
 
 @Component({
@@ -12,9 +13,13 @@ export class HomePageComponent implements OnInit {
   public ctaText = 'See More';
   public name: string;
 
-  constructor(
+  constructor(public router: Router
   ) { }
 
   ngOnInit() {
+  }
+
+  goToProductDetails(id, imagePath, title) {
+    this.router.navigate(['/full-image', id, 'imagePath', imagePath, 'title', title ]);
   }
 }

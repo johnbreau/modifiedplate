@@ -1,1 +1,16 @@
-<p>news works!</p>
+<div class="newsPage">
+  <h1 class="newsPage__title">
+    <span class="newsPage__title--mainHeading">The Modified Plate: </span>
+    <span class="newsPage__title--subHeading">Media & Musings about the LEGO<sup>®</sup> brand</span>
+  </h1>
+  <div class="newsPage__articleContainer" *ngFor="let article of newsApiData">
+    <div class="newsPage__textContainer">
+      <div class="newsPage__articleTitle">{{article.title}}</div>
+      <p>{{article.content}}</p>
+      <div class="newsPage__articleLink">
+        <a href={{article.url}} target="_blank">Read More</a>
+      </div>
+    </div>
+    <div class="newsPage__articleImage" [ngStyle]="{'background-image': 'url(' + article.urlToImage + ')', 'background-size': 'cover'}"></div>
+    </div>
+</div>

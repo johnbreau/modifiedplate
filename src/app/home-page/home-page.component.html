@@ -11,7 +11,7 @@
         <div class="homePage__cardBody">
         </div>
         <div class="homePage__cardCta">
-          <app-cta [ctaText]="ctaText"></app-cta>
+          <app-cta [ctaText]="ctaText" (click)="goToProductDetails(data.id, data.imagePath, data.title)"></app-cta>
         </div>
       </div>
   </div>
