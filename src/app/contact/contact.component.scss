@@ -1,0 +1,21 @@
+@import '../app.component.scss';
+@import '../../assets/styles/include-media.scss';
+
+$breakpoints: (
+  phone: 320px, 
+  tablet: 768px, 
+  desktop: 1024px) !default;
+
+.contactPage {
+  background-color: rgba($primaryWhite, 0.80);
+  border-radius: 5px;
+  margin: 40px auto;
+  min-height: 400px;
+  padding: 30px;
+  max-width: 1000px;
+}
+
+.contactPage__headline{
+  font-family: 'brandon-thin', sans-serif;
+  font-size: 45px;
+}
