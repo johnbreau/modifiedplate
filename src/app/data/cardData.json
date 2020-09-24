@@ -5,6 +5,11 @@
         "imagePath": "../assets/images/emerald-city.jpg"
     },
     {
+        "id": 15,
+        "title": "Wicked Witch of the West",
+        "imagePath": "../assets/images/wicked-witch.jpg"
+    },
+    {
         "id": 10,
         "title": "The Cantina Janitor",
         "imagePath": "../assets/images/img_37_1.jpg"
