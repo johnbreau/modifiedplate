@@ -12,6 +12,10 @@ $breakpoints: (
   width: 100%;
   min-height: 80px;
   background-color: $brandBlue;
+
+  @include media("<tablet") {
+    min-height: 0;
+  }
 }
 
 .header__button-container {
@@ -85,7 +89,6 @@ $breakpoints: (
 }
 
 /* menu */
-
 .mobile-contain {
   align-items: center;
   display: flex;
