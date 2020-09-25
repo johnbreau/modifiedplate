@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import * as data from '../data/cardData.json';
 import { Router } from '@angular/router';
 // import { CtaComponent } from '../shared/cta/cta.component';
@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomePageComponent implements OnInit {
   public cardData: any = data;

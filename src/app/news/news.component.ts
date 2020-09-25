@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NewsService } from '../services/news.service';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 
@@ -6,7 +6,8 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
-  styleUrls: ['./news.component.scss']
+  styleUrls: ['./news.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NewsComponent implements OnInit {
   public newsApiData: any;

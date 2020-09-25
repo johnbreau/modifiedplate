@@ -1,4 +1,10 @@
 @import '../app.component.scss';
+@import '../../assets/styles/include-media.scss';
+
+$breakpoints: (
+  phone: 320px, 
+  tablet: 768px, 
+  desktop: 1024px) !default;
 
 .header {
   border-top: 6px solid $brandRed;
@@ -17,6 +23,10 @@
   list-style-type: none;
   color: $primaryWhite;
   justify-content: space-between;
+
+  @include media("<tablet") {
+    width: 500px;
+  }
 }
 
 .header__text-link {
@@ -52,4 +62,132 @@
   border-radius: 2px;
   height: 60px;
   width: auto;
+}
+/* header */
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.mobile-contain {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mobile-title {
+  display: none;
+
+  @include media("<tablet") {
+    color: $primaryWhite;
+    display: block;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: $primaryWhite;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: $primaryWhite;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
