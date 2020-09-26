@@ -1,14 +1,8 @@
-<nav class="header">    
-  <div class="mobile-contain">
-    <div class="mobile-title">The Modified Plate</div>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  </div>
-  <ul class="header__button-container menu">
-    <!-- <img class="header__logo-image" src="../assets/images/Modified_Plate_FB_Icon.jpg"/> -->
-    <!-- <ul class="menu"> -->
-      <li *ngFor="let link of links">
+<nav class="desktop-header">    
+  <div class="header__button-container">
+    <img class="header__logo-image" src="../assets/images/Modified_Plate_FB_Icon.jpg"/>
         <a  class="header__text-link"  
+            *ngFor="let link of links"
             routerLink={{link}}
             routerLinkActive="active">
           <span>{{ link }}</span>
@@ -20,7 +14,22 @@
               C255,161.018,253.42,157.202,250.606,154.389z"/>
           </svg>
         </a>
-      </li>
-    </ul>
-  <!-- </div> -->
+  </div>
 </nav>
+
+<div class="mobile-header">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+  <div>THE MODIFIED PLATE</div>
+</div>
