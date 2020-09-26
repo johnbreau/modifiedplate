@@ -195,3 +195,11 @@ $breakpoints: (
   color: $primaryWhite;
   transform: none;
 }
+
+.header__mobile-title {
+  text-transform: uppercase;
+  color: $primaryWhite;
+  font-size: 28px;
+  margin-left: 50px;
+  margin-top: -4px;
+}
