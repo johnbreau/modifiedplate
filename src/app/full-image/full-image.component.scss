@@ -10,7 +10,6 @@ $breakpoints: (
   background-color: rgba($primaryWhite, 0.80);
   border-radius: 5px;
   margin: 40px auto;
-  min-height: 400px;
   padding: 30px;
   max-width: 1000px;
 }
@@ -25,7 +24,11 @@ $breakpoints: (
   font-size: 40px;
   color: $brandBlue;
   text-transform: uppercase;
-  margin-top: 15px;;
+  margin-top: 15px;
+
+  @include media("<tablet") {
+    font-size: 25px;
+  }
 }
 
 .fullPage__backButton {

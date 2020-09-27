@@ -10,9 +10,12 @@ $breakpoints: (
   background-color: rgba($primaryWhite, 0.80);
   border-radius: 5px;
   margin: 40px auto;
-  min-height: 400px;
   padding: 30px;
   max-width: 1000px;
+
+  @include media("<desktop") {
+    margin: 0 auto;
+  }
 }
 
 .homePage__container {
@@ -21,9 +24,9 @@ $breakpoints: (
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  // @include mq(desktop-tablet) {
-  //   flex-direction: row;
-  // }
+  @include media("<desktop") {
+    display: block;
+  }
 }
 
 .homePage__title {
@@ -31,6 +34,10 @@ $breakpoints: (
   height: 60px;
   color: $brandRed;
   text-transform: uppercase;
+
+  @include media("<desktop") {
+    display: none;
+  }
 }
 
 .homePage__title--mainHeading {

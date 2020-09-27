@@ -1,4 +1,4 @@
-<nav class="header">    
+<nav class="desktop-header">    
   <div class="header__button-container">
     <img class="header__logo-image" src="../assets/images/Modified_Plate_FB_Icon.jpg"/>
         <a  class="header__text-link"  
@@ -16,3 +16,20 @@
         </a>
   </div>
 </nav>
+
+<div class="mobile-header">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a *ngFor="let link of links"
+      routerLink={{link}}
+      routerLinkActive="active">
+        <li>{{ link }}</li>
+      </a>
+    </ul>
+  </div>
+  <div class="header__mobile-title">The Modified Plate</div>
+</div>

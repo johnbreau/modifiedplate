@@ -13,6 +13,10 @@ $breakpoints: (
   min-height: 400px;
   padding: 30px;
   max-width: 1000px;
+
+  @include media("<tablet") {
+    padding: 20px;
+  }
 }
 
 .newsPage__title {
@@ -20,6 +24,10 @@ $breakpoints: (
   height: 60px;
   color: $brandRed;
   text-transform: uppercase;
+
+  @include media("<tablet") {
+    display: none;
+  }
 }
 
 .newsPage__title--mainHeading {
@@ -52,27 +60,40 @@ $breakpoints: (
   margin-bottom: 40px;
   border-bottom: 1px solid $primaryBlack;
 
-  @include media("<desktop") {
+  @include media("<tablet") {
     flex-direction: column;
+    margin: 0;
   }
 }
 
 .newsPage__textContainer {
   margin: 40px;
+
+  @include media("<tablet") {
+   margin: 0;
+  }
 }
 
 .newsPage__articleImage {
   height: 300px;
   min-width: 400px;
   margin-bottom: 40px;
+
+  @include media("<tablet") {
+    min-width: 0;
+   }
 }
 
 .newsPage__articleTitle {
   color: $brandBlue;
   font-family: 'brandon-bold', sans-serif;
   font-size: 22px;
-  padding-right: 60px;
+  padding: 0 60px 0 0;
   text-align: left;
+
+  @include media("<tablet") {
+    padding: 20px 0 0 0;
+   }
 }
 
 .newsPage__articleLink {
@@ -95,4 +116,8 @@ $breakpoints: (
   margin-top: 10px;
   padding-right: 60px;
   text-align: left;
+
+  @include media("<tablet") {
+    padding-right: 0;
+   }
 }
