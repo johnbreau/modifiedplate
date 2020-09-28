@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import * as data from '../data/cardData.json';
 import { Router } from '@angular/router';
+import { BricksetService} from '../services/brickset.service';
 // import { CtaComponent } from '../shared/cta/cta.component';
 
 @Component({
@@ -14,10 +15,14 @@ export class HomePageComponent implements OnInit {
   public ctaText = 'See More';
   public name: string;
 
-  constructor(public router: Router
+  constructor(
+    public router: Router,
+    public brickset: BricksetService
   ) { }
 
   ngOnInit() {
+    console.log('init');
+    this.brickset.bricksetGet();
   }
 
   goToProductDetails(id, imagePath, title) {
